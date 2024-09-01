@@ -7,7 +7,6 @@ register_nav_menus( array(
 
 add_theme_support( 'post-thumbnails' );
 add_theme_support( 'custom-logo' );
-add_theme_support( 'widgets' );
 
 function register_footer1_widget_area() {
     register_sidebar(
@@ -21,18 +20,8 @@ function register_footer1_widget_area() {
             'after_title' => ''
         )
     );
-    register_sidebar(
-        array(
-            'id' => 'footer-widget-area-2',
-            'name' => esc_html__( 'Footer First Part', 'theme-domain' ),
-            'description' => esc_html__( 'Your footer content', 'theme-domain' ),
-            'before_widget' => '',
-            'after_widget' => '',
-            'before_title' => '',
-            'after_title' => ''
-        )
-    );
 }
+add_action( 'widgets_init', 'register_footer1_widget_area' );
 
 /* custome post type */
 

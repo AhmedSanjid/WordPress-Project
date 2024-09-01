@@ -20,12 +20,10 @@
 In 2003 we formed a dedicated business team delivering bespoke solutions across Derbyshire and the greater Yorkshire region.</li>
                      </ul>
                   </div>
-                  <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-                  <div class="ftco-footer-widget mb-5">
-                <?php if ( is_active_sidebar( 'footer-widget-area-1' ) ) : ?>
+                  <div class="ftco-footer-widget col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                  <?php if ( is_active_sidebar( 'footer-widget-area-1' ) ) : ?>
                   <?php dynamic_sidebar( 'footer-widget-area-1' ); ?>
                 <?php endif; ?>
-            </div>
                   </div>
                   <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
                      <form class="bottom_form">
