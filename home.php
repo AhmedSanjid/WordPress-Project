@@ -207,7 +207,7 @@
                         <div class="col-md-4 margin_bottom1">
                            <div class="product_box">
                               <figure><img src="<?= get_template_directory_uri() ?>/images/product6.png" alt="#"/></figure>
-                              <h3>Hardisk</h3>
+                              <h3>Hard Disk</h3>
                            </div>
                         </div>
                         <div class="col-md-4">
@@ -219,7 +219,7 @@
                         <div class="col-md-4">
                            <div class="product_box">
                               <figure><img src="<?= get_template_directory_uri() ?>/images/product8.png" alt="#"/></figure>
-                              <h3>Bettery</h3>
+                              <h3>Battery</h3>
                            </div>
                         </div>
                         <div class="col-md-4">
@@ -380,4 +380,4 @@
          </div>
       </div>
       <!-- end contact -->
-       <?php get_footer(); ?> 
+       <?php get_footer(); ?>

@@ -8,6 +8,21 @@ register_nav_menus( array(
 add_theme_support( 'post-thumbnails' );
 add_theme_support( 'custom-logo' );
 
+function register_header1_widget_area() {
+    register_sidebar(
+        array(
+            'id' => 'header-widget-area-1',
+            'name' => esc_html__( 'Header First Part', 'theme-domain' ),
+            'description' => esc_html__( 'Your Header content', 'theme-domain' ),
+            'before_widget' => '',
+            'after_widget' => '',
+            'before_title' => '',
+            'after_title' => ''
+        )
+    );
+}
+add_action( 'widgets_init', 'register_header1_widget_area' );
+
 function register_footer1_widget_area() {
     register_sidebar(
         array(

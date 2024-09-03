@@ -61,9 +61,12 @@
                       'add_li_class'  => 'nav-item',
                       'container'=>''
                     ) ); ?>
-                        
+                        <?php if ( is_active_sidebar( 'header-widget-area-1' ) ) : ?>
+                  <?php dynamic_sidebar( 'header-widget-area-1' ); ?>
+                <?php endif; ?>
                         </div>
                      </nav>
+                     
                   </div>
                </div>
             </div>
